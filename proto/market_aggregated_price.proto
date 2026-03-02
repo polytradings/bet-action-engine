@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.polytradings.betaction.protobuf";
+option java_outer_classname = "MarketAggregatedPriceProto";
+
+message MarketAggregatedPrice {
+    string symbol = 1;
+    double price = 2;
+    int64 timestamp = 3;
+    double volume = 4;
+    string exchange = 5;
+}
