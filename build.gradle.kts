@@ -24,7 +24,7 @@ dependencies {
     implementation("io.nats:jnats:2.20.4")
 
     // Protobuf
-    implementation("com.google.protobuf:protobuf-java:3.25.2")
+    implementation("com.google.protobuf:protobuf-java:3.25.5")
 
     // Logging
     implementation("org.slf4j:slf4j-api:2.0.12")
@@ -41,7 +41,7 @@ application {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:3.25.2"
+        artifact = "com.google.protobuf:protoc:3.25.5"
     }
     generatedFilesBaseDir = "$projectDir/src/generated"
 }
