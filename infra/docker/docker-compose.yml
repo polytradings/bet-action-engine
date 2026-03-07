@@ -1,0 +1,15 @@
+services:
+  bet-action-engine:
+    container_name: bet-action-engine
+    build:
+      context: ../../app
+      dockerfile: Dockerfile
+    environment:
+      NATS_SERVERS: nats://nats:4222
+    networks:
+      - nats-net
+    restart: unless-stopped
+
+networks:
+  nats-net:
+    driver: bridge

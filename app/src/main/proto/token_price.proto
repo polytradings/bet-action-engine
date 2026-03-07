@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.polytradings.betaction.protobuf";
+option java_outer_classname = "TokenPriceProto";
+
+message TokenPrice {
+    string source = 1;
+    string market_id = 2;
+    string condition_id = 3;
+    string token_id = 4;
+    string side = 5;
+    double price = 6;
+    int64 timestamp_unix_ms = 7;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.polytradings.betaction.protobuf";
+option java_outer_classname = "CryptoPriceProto";
+
+message CryptoPrice {
+    string source = 1;
+    string symbol = 2;
+    double price = 3;
+    int64 timestamp_unix_ms = 4;
+}
